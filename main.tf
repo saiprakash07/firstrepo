@@ -1,18 +1,18 @@
 
 module "rg" {
 
-source = "git::https://github.com/saiprakash07//terraform-azurerm-resourcegroup"
+source = "github.com/saiprakash07/terraform-azurerm-resourcegroup"
   
 }
 
   module "vnet" {
 
-source = "git::https://github.com/saiprakash07//terraform-azurerm-vnet"
+source = "github.com/saiprakash07/terraform-azurerm-vnet"
 
 }
 
     module "subnet" {
 
-source = "git::https://github.com/saiprakash07//terraform-azurerm-subnet"
+source = "github.com/saiprakash07/terraform-azurerm-subnet"
 
 }
