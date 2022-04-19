@@ -7,11 +7,11 @@ module "rg" {
 module "vnet" {
 
   source = "github.com/saiprakash07/terraform-azurerm-vnet"
-  depends_on = [module.rg]
+ # depends_on = [module.rg]
 }
 
 module "subnet" {
 
   source = "github.com/saiprakash07/terraform-azurerm-subnet"
-  depends_on = [module.vnet, module.rg]
+ # depends_on = [module.vnet, module.rg]
 }
